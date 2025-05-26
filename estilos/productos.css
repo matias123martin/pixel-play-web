@@ -1,0 +1,71 @@
+@import url("global.css");
+
+/* BUSQUEDA */
+.busqueda {
+  padding: 2rem;
+  text-align: center;
+}
+
+.campo-busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.campo-busqueda input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+/* PRODUCTOS */
+.productos {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-producto {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  width: 280px;
+  text-align: left;
+}
+.card-producto h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card-producto p {
+  margin-bottom: 0.5rem;
+}
+
+.card-producto .precio {
+  font-weight: bold;
+  color: var(--animacion-hover);
+}
+
+.card-producto button {
+  background-color: var(--fondo-negro);
+  color: var(--texto-blanco);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-producto button:hover {
+  background-color: var(--animacion-hover);
+}

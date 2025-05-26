@@ -1,0 +1,101 @@
+:root {
+  --fondo: #eff1f3;
+  --fondo-negro: #1a181b;
+  --texto: #1a181b;
+  --texto-blanco: #f7fdff;
+  --animacion-hover: #406e8e;
+  /*
+    242F40
+    */
+}
+
+/*
+RESET
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+BODY
+*/
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* 
+HEADER / NAVBAR 
+*/
+
+header {
+  background-color: var(--fondo-negro);
+  color: var(--texto-blanco);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar {
+  flex: 1;
+}
+
+/* 
+UL del menú
+*/
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: var(--texto-blanco);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--animacion-hover);
+}
+/*
+FOOTER
+*/
+footer {
+  background-color: var(--fondo-negro);
+  color: var(--texto-blanco);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-navegacion {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+}

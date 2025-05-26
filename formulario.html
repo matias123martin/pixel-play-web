@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelPlay</title>
+    <link rel="stylesheet" href="./estilos/formulario.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">🎮 PixelPlay</div>
+      <nav class="navbar">
+        <ul class="menu-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-formulario">
+      <section class="contenedor-formulario">
+        <h2>Pedí tu Presupuesto</h2>
+        <p>
+          Completá el formulario para solicitar un producto personalizado o
+          recibir información.
+        </p>
+
+        <form class="formulario">
+          <div class="section-formulario">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="section-formulario">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="section-formulario">
+            <label for="producto">Producto deseado</label>
+            <select id="producto" name="producto">
+              <option value="">-- Seleccionar --</option>
+              <option value="consola">Consola Retro Personalizada</option>
+              <option value="juegos">Juegos Clásicos</option>
+              <option value="combo">Merch Gamer</option>
+            </select>
+          </div>
+
+          <div class="section-formulario">
+            <label>¿Qué te interesa?</label>
+            <label
+              ><input type="checkbox" name="interes" value="personalizacion" />
+              Personalización</label
+            >
+            <label
+              ><input type="checkbox" name="interes" value="envio" /> Envío a
+              domicilio</label
+            >
+            <label
+              ><input type="checkbox" name="interes" value="regalo" /> Opción
+              regalo</label
+            >
+          </div>
+
+          <div class="section-formulario">
+            <label for="fecha">Fecha estimada de entrega</label>
+            <input
+              type="text"
+              id="fecha"
+              value="A coordinar"
+              class="input-disabled"
+              disabled
+            />
+          </div>
+
+          <div class="section-formulario">
+            <label for="mensaje">Mensaje adicional</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Contanos más sobre tu pedido..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2025 PixelPlay. Todos los derechos reservados.</p>
+      <p>📍 Av. Gamer Retro 1985 | ✉️ contacto@pixelplay.com</p>
+    </footer>
+  </body>
+</html>

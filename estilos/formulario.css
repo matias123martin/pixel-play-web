@@ -1,0 +1,75 @@
+@import url("global.css");
+
+/* FORMULARIO */
+.main-formulario {
+  padding: 2rem;
+  background-color: var(--fondo);
+}
+
+.contenedor-formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 1rem;
+  color: var(--fondo-negro);
+}
+
+.formulario p {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.formulario .section-formulario {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-disabled {
+  background-color: #eee;
+  color: #777;
+}
+
+.boton-enviar {
+  background-color: var(--fondo-negro);
+  color: var(--texto-blanco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: var(--animacion-hover);
+}
+
+@media (max-width: 530px) {
+  .contenedor-formulario {
+    padding: 1rem;
+  }
+
+  .contenedor-formulario h2 {
+    font-size: 1.3rem;
+  }
+}
