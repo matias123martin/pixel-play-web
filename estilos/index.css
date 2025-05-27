@@ -30,7 +30,7 @@ main {
 /* Contenedor Misión y Visión */
 .contenedor-informacion {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 0;
@@ -40,7 +40,7 @@ main {
 .vision {
   background-color: var(--fondo-negro);
   color: var(--texto-blanco);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   width: 350px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
@@ -57,14 +57,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: space-evenly;
 }
 
 .servicio {
   flex: 1 1 250px;
   color: var(--texto);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 350px;
 }
 
 .servicio h3 {
