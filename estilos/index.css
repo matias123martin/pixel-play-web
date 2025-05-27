@@ -40,9 +40,9 @@ main {
 .vision {
   background-color: var(--fondo-negro);
   color: var(--texto-blanco);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 10px;
-  width: 350px;
+  max-width: 400px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -63,10 +63,10 @@ main {
 .servicio {
   flex: 1 1 250px;
   color: var(--texto);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .servicio h3 {

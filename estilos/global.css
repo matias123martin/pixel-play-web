@@ -35,7 +35,7 @@ HEADER / NAVBAR
 header {
   background-color: var(--fondo-negro);
   color: var(--texto-blanco);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
